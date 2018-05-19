@@ -122,3 +122,20 @@ section > ul > li > button {
     color: white;
     text-transform: uppercase;
 }
+
+.row {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.col33 {
+    float: left;
+    width: 33.333%;
+    color: black;
+}
