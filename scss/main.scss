@@ -1,6 +1,11 @@
+$site-color: #25c9b0;
+
 @import "partials/_header.scss";
 @import "partials/_slider.scss";
 @import "partials/_chairs.scss";
+@import "partials/_shopping-plans.scss";
+
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +16,16 @@
   display: block;
   font-weight: bold;
 }
+
+%large-site-color-underscore {
+  border-bottom: solid 8px $site-color;
+  width: 320px;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 
 body {
   font-family: 'Raleway', sans-serif;

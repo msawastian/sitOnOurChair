@@ -1,0 +1,122 @@
+.plans-div {
+  height: 725px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  .plans-header {
+    width: 100%;
+    border: 1px solid blue;
+    h2 {
+      @extend %large-site-color-underscore;
+      margin: 48px 0 0 70px;
+    }
+  }
+  .plans-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .plans-option {
+      height: 500px;
+      width: 330px;
+      border: 1px solid #d5d5d5;
+      position: relative;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &:first-child {
+        margin: 75px 15px 0 66px;
+      }
+      &:nth-child(2) {
+        margin: 75px 15px;
+      }
+      &:last-child {
+        margin: 75px 66px 0 15px;
+      }
+      h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $site-color;
+        text-align: center;
+
+        margin: 31px 0 0 0;
+      }
+      .plan-price {
+        width: 129px;
+        height: 129px;
+        border-radius: 50%;
+        border: 1px solid #d5d5d5;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        //margin: 32px auto;
+        span {
+          display: block;
+          color: #d5d5d5;
+          &:first-child {
+            font-size: 32px;
+          }
+        }
+        }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid white;
+        width: 100%;
+        li {
+          font-size: 13px;
+          line-height: 43px;
+          height: 43px;
+          text-align: center;
+          &:nth-child(odd) {
+            background-color: #e4e4e4;
+            color: #949494;
+          }
+          &:nth-child(even) {
+            background-color: #f1f1f1;
+            color: #747474;
+          }
+        }
+      }
+      button {
+        background-color: $site-color;
+        height: 34px;
+        width: 122px;
+        border-radius: 7px;
+        margin: 0 0 19px 0;
+      }
+      }
+    }
+  }
+
+.dot1 {
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 50%;
+  margin-left: -28.5px;
+  top: -37px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.dot2 {
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  top: 50%;
+  margin-top: -13.5px;
+  left: 50%;
+  margin-left: -13.5px;
+  background-color: #c2c2c2;
+  z-index: 2;
+}
+
