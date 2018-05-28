@@ -1,5 +1,6 @@
 @import "partials/_header.scss";
-
+@import "partials/_slider.scss";
+@import "partials/_chairs.scss";
 * {
   box-sizing: border-box;
 }
@@ -9,6 +10,6 @@ body {
 }
 
 .container {
-  width: 1060px;
+  width: 1050px;
   margin: 0 auto;
 }

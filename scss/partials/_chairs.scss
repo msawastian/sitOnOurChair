@@ -1,0 +1,27 @@
+.chairs {
+  border: solid 1px red;
+}
+
+.chairs-div {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+  .chairs-presentation {
+    width: 329px;
+    height: 225px;
+    border: solid 1px blue;
+    &:nth-child(1) {
+      background-image: url("../../images/box1_img.jpg");
+    }
+    &:nth-child(2) {
+      background-image: url("../../images/box2_img.jpg");
+    }
+  }
+  .chairs-text-box {
+    width: 340px;
+    height: 255px;
+    border: solid 1px green;
+  }
+}
