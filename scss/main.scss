@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+%small-site-color-underscore {
+  border-bottom: solid 7px $site-color;
+  width: 138px;
+  display: block;
+  font-weight: bold;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
