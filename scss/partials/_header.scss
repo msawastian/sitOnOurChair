@@ -1,0 +1,157 @@
+$site-color: #25c9b0;
+
+.logo {
+  float: left;
+  color: white;
+  line-height: 40px;
+}
+
+header{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+header .logo h1 {
+  padding: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 10px;
+  .logo-span {
+    color: $site-color;
+  }
+}
+
+nav ul {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+nav > ul {
+  float: right;
+}
+
+nav > ul > li {;
+  float: left;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+nav > ul > li ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+nav ul li ul li {
+  background-color: black;
+  a {
+    font-size: 12px;
+  }
+}
+
+.dropDownMenuTriangle {
+  content: '';
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+  height: 0;
+  width: 0;
+  position: relative;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+}
+
+
+nav > ul > li:hover ul {
+  display: block;
+}
+
+.logo {
+  float: left;
+  color: white;
+  line-height: 40px;
+}
+
+header{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+header .logo h1 {
+  padding: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 10px;
+  .logo-span {
+    color: $site-color;
+  }
+}
+
+nav ul {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+nav > ul {
+  float: right;
+}
+
+nav > ul > li {;
+  float: left;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+nav > ul > li ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+nav ul li ul li {
+  background-color: black;
+  a {
+    font-size: 12px;
+  }
+}
+
+.dropDownMenuTriangle {
+  content: '';
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+  height: 0;
+  width: 0;
+  position: relative;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+}
+
+
+nav > ul > li:hover ul {
+  display: block;
+}

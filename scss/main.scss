@@ -1,0 +1,14 @@
+@import "partials/_header.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 1060px;
+  margin: 0 auto;
+}

@@ -4,14 +4,14 @@ var jshint = require('gulp-jshint');
 var sourcemap = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-    return gulp.src('/scss/main.scss')
+    return gulp.src('scss/main.scss')
         .pipe(sourcemap.init())
         .pipe(sass({outputStyle: 'compact'}, {errLogToConsole: true}, {sourceMap: true}))
         .on('error',function(e){
             console.error('gulpError', e)
         })
         .pipe(sourcemap.write())
-        .pipe(gulp.dest('/css'))
+        .pipe(gulp.dest('css'))
 });
 
 gulp.task('jshint', function () {
@@ -21,5 +21,5 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('/scss/main.scss', ['sass']);
+    gulp.watch('**/*.scss', ['sass']);
 });
