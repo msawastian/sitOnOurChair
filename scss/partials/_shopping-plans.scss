@@ -20,7 +20,7 @@
     .plans-option {
       height: 500px;
       width: 330px;
-      border: 1px solid #d5d5d5;
+      border: 2px solid #d5d5d5;
       position: relative;
       background-color: #f9f9f9;
       display: flex;
@@ -48,14 +48,14 @@
         width: 129px;
         height: 129px;
         border-radius: 50%;
-        border: 1px solid #d5d5d5;
+        border: 2px solid #d5d5d5;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #ffffff;
-        //margin: 32px auto;
+        margin-top: 30px;
         >span {
           display: block;
           color: #d5d5d5;
@@ -72,21 +72,25 @@
       ul {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 35px 0 0 0;
         border-top: 1px solid white;
         width: 100%;
         li {
-          font-size: 13px;
+          font-size: 24px;
           line-height: 43px;
           height: 43px;
           text-align: center;
           &:nth-child(odd) {
             background-color: #e4e4e4;
             color: #949494;
+            line-height: 44px;
+            height: 44px;
           }
           &:nth-child(even) {
             background-color: #f1f1f1;
             color: #747474;
+            line-height: 45px;
+            height: 45px;
           }
         }
       }
@@ -95,7 +99,7 @@
         height: 34px;
         width: 122px;
         border-radius: 7px;
-        //margin: 0 0 19px 0;
+        margin: auto 0 19px 0;
         text-transform: uppercase;
         color: #ffffff;
         border: 0;
@@ -105,7 +109,7 @@
   }
 
 .dot1 {
-  border: 1px solid #d5d5d5;
+  border: 2px solid #d5d5d5;
   border-radius: 50%;
   width: 57px;
   height: 57px;
