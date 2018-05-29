@@ -1,0 +1,31 @@
+footer {
+  margin-top: 38px;
+}
+
+.footer-div {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .copyright {
+    display: block;
+    color: #b7b7b7;
+    margin-bottom: 20px;
+  }
+  .footer-right-column {
+    display: flex;
+    align-items: flex-end;
+    .footer-images {
+      margin-right: 70px;
+      margin-bottom: 20px;
+    }
+    .footer-logo {
+      display: block;
+      color: #b7b7b7;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+}
