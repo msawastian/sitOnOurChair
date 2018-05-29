@@ -1,15 +1,16 @@
+.plans {
+  background-color: #f1f1f1;
+}
+
 .plans-div {
   height: 725px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
   .plans-header {
     width: 100%;
-    border: 1px solid blue;
     h2 {
       @extend %large-site-color-underscore;
-      margin: 48px 0 0 70px;
+      margin: 48px 0 0 0;
     }
   }
   .plans-options {
@@ -25,18 +26,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      //justify-content: space-around;
       &:first-child {
-        margin: 75px 15px 0 66px;
+        margin: 75px 15px 0 0;
       }
       &:nth-child(2) {
         margin: 75px 15px;
       }
       &:last-child {
-        margin: 75px 66px 0 15px;
+        margin: 75px 0 0 15px;
       }
       h3 {
-        font-size: 18px;
+        font-size: 22px;
         text-transform: uppercase;
         color: $site-color;
         text-align: center;
@@ -50,15 +51,21 @@
         border: 1px solid #d5d5d5;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: #ffffff;
         //margin: 32px auto;
-        span {
+        >span {
           display: block;
           color: #d5d5d5;
           &:first-child {
-            font-size: 32px;
+            font-size: 40px;
+            font-weight: bold;
+          }
+          .super {
+            font-size: 16px;
+            vertical-align: text-top;
           }
         }
         }
@@ -88,7 +95,10 @@
         height: 34px;
         width: 122px;
         border-radius: 7px;
-        margin: 0 0 19px 0;
+        //margin: 0 0 19px 0;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: 0;
       }
       }
     }
