@@ -1,10 +1,10 @@
 .slider-list {
   list-style: none;
-  border: 1px solid green;
+  //border: 1px solid green;
   li {
     list-style: none;
     display: flex;
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border: 1px solid red;
+  //border: 1px solid red;
   height: 504px;
   padding-top: 50px;
   ul {
@@ -33,22 +33,28 @@
   font-size: 80px;
   color: $site-color;
   background: none;
-  border: 1px solid blue;
+  border: none;
+  height: 90%;
 }
 
 .slider-image {
   background: url("../images/black_chair.png") no-repeat center;
   background-size: 600px;
-  width: 400px;
+  width: 340px;
   height: 100%;
-  border: 1px solid purple;
+  //border: 1px solid purple;
+  margin-right: auto;
+  margin-left: 35px;
 }
 
 .slider-text-block {
+  margin-left: auto;
+  margin-right: 85px;
+  //border: 1px solid red;
   width: 420px;
   height: 337px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
   flex-direction: column;
@@ -56,22 +62,28 @@
     text-transform: uppercase;
     font-size: 40px;
     display: block;
-    margin: 0;
+    margin: 80px 0 0 0;
     font-weight: normal;
   }
   p {
     text-align: center;
     display: block;
+    margin: 0 0 20px 0;
+    font-size: 15px;
   }
   button {
     height: 52px;
     width: 264px;
-    border-radius: 15px;
-    box-shadow: none;
+    margin-bottom: 10px;
     border: none;
+    border-radius: 7px;
+    box-shadow: none;
     background-color: $site-color;
     text-transform: uppercase;
     color: white;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
   }
 }
 
