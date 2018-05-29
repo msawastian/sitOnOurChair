@@ -1,13 +1,14 @@
 .slider-list {
   list-style: none;
+  border: 1px solid green;
   li {
     list-style: none;
     display: flex;
+    border: 1px solid red;
   }
 }
 
 .slider {
-  padding-top: 100px;
   background: #f7f7f7; /* Old browsers */
   background: -moz-linear-gradient(top, #f7f7f7 0%, #f5f5f5 51%, #cfced3 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #f7f7f7 0%,#f5f5f5 51%,#cfced3 100%); /* Chrome10-25,Safari5.1-6 */
@@ -19,6 +20,9 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  border: 1px solid red;
+  height: 504px;
+  padding-top: 50px;
   ul {
     padding: 0;
     margin: 0;
@@ -26,28 +30,38 @@
 }
 
 .prev, .next {
-  font-size: 42px;
+  font-size: 80px;
   color: $site-color;
   background: none;
-  border: none;
+  border: 1px solid blue;
 }
 
-.slider-list-element {
-  display: flex;
+.slider-image {
+  background: url("../images/black_chair.png") no-repeat center;
+  background-size: 600px;
+  width: 400px;
+  height: 100%;
+  border: 1px solid purple;
 }
 
 .slider-text-block {
   width: 420px;
   height: 337px;
+  display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   flex-direction: column;
   h2 {
-    text-align: center;
     text-transform: uppercase;
+    font-size: 40px;
+    display: block;
+    margin: 0;
+    font-weight: normal;
   }
   p {
     text-align: center;
+    display: block;
   }
   button {
     height: 52px;
