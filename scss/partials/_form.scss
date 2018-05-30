@@ -57,6 +57,8 @@
         border-radius: 7px;
         margin-top: 37px;
         align-self: flex-end;
+        font-size: 34px;
+        font-weight: bold;
       }
     }
   }
@@ -74,6 +76,10 @@
     width: 49px;
     height: 49px;
     border: 1px solid $site-color;
+    background-image: url("../images/form_ok.jpg");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
   }
   div:nth-child(2) {
     width: 293px;
