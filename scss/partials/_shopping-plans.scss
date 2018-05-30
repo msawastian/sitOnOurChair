@@ -20,13 +20,10 @@
     .plans-option {
       height: 500px;
       width: 330px;
-      border: 2px solid #d5d5d5;
       position: relative;
-      background-color: #f9f9f9;
       display: flex;
       flex-direction: column;
       align-items: center;
-      //justify-content: space-around;
       &:first-child {
         margin: 75px 15px 0 0;
       }
@@ -36,29 +33,45 @@
       &:last-child {
         margin: 75px 0 0 15px;
       }
+      .dot1 {
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+        position: absolute;
+        left: 50%;
+        margin-left: -28.5px;
+        top: -37px;
+        z-index: 1;
+        .dot2 {
+          border-radius: 50%;
+          width: 27px;
+          height: 27px;
+          position: relative;
+          top: 50%;
+          margin-top: -13.5px;
+          left: 50%;
+          margin-left: -13.5px;
+          z-index: 2;
+        }
+      }
       h3 {
         font-size: 22px;
         text-transform: uppercase;
-        color: $site-color;
         text-align: center;
-
         margin: 31px 0 0 0;
       }
       .plan-price {
         width: 129px;
         height: 129px;
         border-radius: 50%;
-        border: 2px solid #d5d5d5;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
         margin-top: 30px;
         >span {
           display: block;
-          color: #d5d5d5;
           &:first-child {
             font-size: 40px;
             font-weight: bold;
@@ -73,7 +86,6 @@
         list-style: none;
         padding: 0;
         margin: 35px 0 0 0;
-        border-top: 1px solid white;
         width: 100%;
         li {
           font-size: 24px;
@@ -81,56 +93,105 @@
           height: 43px;
           text-align: center;
           &:nth-child(odd) {
-            background-color: #e4e4e4;
-            color: #949494;
             line-height: 44px;
             height: 44px;
           }
           &:nth-child(even) {
-            background-color: #f1f1f1;
-            color: #747474;
             line-height: 45px;
             height: 45px;
           }
         }
       }
       button {
-        background-color: $site-color;
         height: 34px;
         width: 122px;
         border-radius: 7px;
         margin: auto 0 19px 0;
         text-transform: uppercase;
-        color: #ffffff;
         border: 0;
       }
       }
     }
   }
 
-.dot1 {
+.inactive {
   border: 2px solid #d5d5d5;
-  border-radius: 50%;
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 50%;
-  margin-left: -28.5px;
-  top: -37px;
-  z-index: 1;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
+  .dot1 {
+    border: 2px solid #d5d5d5;
+    background-color: #ffffff;
+    .dot2 {
+      background-color: #c2c2c2;
+    }
+  }
+  h3 {
+    color: $site-color;
+  }
+  .plan-price {
+    border: 2px solid #d5d5d5;
+    background-color: #ffffff;
+  }
+  span {
+    color: #d5d5d5;
+  }
+  ul {
+    border-top: 1px solid white;
+    li {
+      &:nth-child(odd) {
+        background-color: #e4e4e4;
+        color: #949494;
+      }
+      &:nth-child(even) {
+        background-color: #f1f1f1;
+        color: #747474;
+      }
+    }
+  }
+  button {
+    background-color: $site-color;
+    color: #ffffff;
+  }
 }
 
-.dot2 {
-  border-radius: 50%;
-  width: 27px;
-  height: 27px;
-  position: relative;
-  top: 50%;
-  margin-top: -13.5px;
-  left: 50%;
-  margin-left: -13.5px;
-  background-color: #c2c2c2;
-  z-index: 2;
+.active {
+  border: 2px solid $site-color;
+  background-color: $site-color;
+  .dot1 {
+    border: 2px solid $site-color;
+    background-color: $site-color;
+    .dot2 {
+      background-color: #ffffff;
+    }
+  }
+  h3 {
+    color: #ffffff;
+  }
+  .plan-price {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+  }
+  span {
+    color: $site-color;
+  }
+  ul {
+    border-top: 1px solid white;
+    li {
+      &:nth-child(odd) {
+        background-color: #ffffff;
+        color: #949494;
+      }
+      &:nth-child(even) {
+        background-color: #f1f1f1;
+        color: #747474;
+      }
+    }
+  }
+  button {
+    background-color: #ffffff;
+    color: $site-color;
+  }
 }
+
+
+
 
