@@ -1,10 +1,8 @@
 .slider-list {
   list-style: none;
-  //border: 1px solid green;
   li {
     list-style: none;
     display: flex;
-    //border: 1px solid red;
   }
 }
 
@@ -20,7 +18,6 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  //border: 1px solid red;
   height: 504px;
   padding-top: 50px;
   ul {
@@ -38,19 +35,27 @@
 }
 
 .slider-image {
-  background: url("../images/black_chair.png") no-repeat center;
+  &:nth-child(2) {
+    background: url("../images/black_chair.png") no-repeat center;
+  }
+  &:nth-child(3) {
+    background: url("../images/orange_chair.png") no-repeat center;
+  }
   background-size: 600px;
   width: 340px;
   height: 100%;
-  //border: 1px solid purple;
   margin-right: auto;
   margin-left: 35px;
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .slider-text-block {
   margin-left: auto;
   margin-right: 85px;
-  //border: 1px solid red;
   width: 420px;
   height: 337px;
   display: flex;
