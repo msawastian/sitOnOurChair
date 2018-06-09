@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var chairBoxes = document.querySelectorAll('.chairs-presentation');
 
     function hideNameBlock(event) {
-        event.target.firstElementChild.style.display = 'none';
+        event.currentTarget.firstElementChild.style.display = 'none';
     }
 
     function revealNameBlock(event) {
-        event.target.firstElementChild.style.display = 'flex';
+        event.currentTarget.firstElementChild.style.display = 'flex';
     }
 
     for (var chair of chairBoxes) {
