@@ -24,6 +24,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      opacity: 1;
+      transition: opacity 333ms ease-in 75ms;
+      &.hidden {
+        opacity: 0;
+      }
       .outer-span {
         margin-left: 14px;
         font-size: 14px;
