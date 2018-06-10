@@ -66,12 +66,17 @@ nav > ul > li ul {
   text-align: left;
 }
 
+nav > ul > li > ul > li:nth-child(2) {
+  padding-top: 5px;
+}
+
 nav ul li ul li {
   background-color: black;
   a {
-    font-weight: normal;
+    font-weight: 500;
     height: 32px;
     line-height: 32px;
+    letter-spacing: 0.5px;
   }
 }
 
