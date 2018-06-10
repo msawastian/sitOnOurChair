@@ -40,15 +40,6 @@
 }
 
 .slider-image {
-  //&:nth-child(2) {
-  //  background: url("../images/black_chair.png") no-repeat center;
-  //}
-  //&:nth-child(3) {
-  //  background: url("../images/orange_chair.png") no-repeat center;
-  //}
-  background: url("../images/black_chair.png") no-repeat center;
-
-  background-size: 600px;
   width: 340px;
   height: 100%;
   margin-right: auto;
@@ -56,8 +47,14 @@
   display: block;
 }
 
-.visible {
-  display: block;
+.image1 {
+  background: url("../images/black_chair.png") no-repeat center;
+  background-size: 600px;
+}
+
+.image2 {
+  background: url("../images/orange_chair.png") no-repeat center;
+  background-size: 450px;
 }
 
 .slider-text-block {
