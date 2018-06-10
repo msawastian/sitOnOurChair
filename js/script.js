@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     //Hides chair names on mouseover, reveals them on mouseout
-    var chairBoxes = document.querySelectorAll('.chairs-presentation');
+    const chairBoxes = document.querySelectorAll('.chairs-presentation');
 
     function hideNameBlock(event) {
         event.currentTarget.firstElementChild.classList.add('hidden');
@@ -11,51 +11,53 @@ document.addEventListener('DOMContentLoaded', function () {
         event.currentTarget.firstElementChild.classList.remove('hidden');
     }
 
-    for (var chair of chairBoxes) {
+    for (let chair of chairBoxes) {
         chair.addEventListener('mouseover', hideNameBlock);
         chair.addEventListener('mouseout', revealNameBlock);
     }
 
     //Slider implementation
-    var prevButton = document.querySelector('.prev'),
-        nextButton = document.querySelector('.next'),
-        sliderImages = document.querySelectorAll('.slider-image'),
-        sliderImageVisibilityCounter = 0;
 
-    function nextSlide() {
-        if (sliderImageVisibilityCounter < sliderImages.length - 1) {
-            sliderImages[sliderImageVisibilityCounter].style.display = 'none';
-            sliderImageVisibilityCounter += 1;
-            sliderImages[sliderImageVisibilityCounter].style.display = 'block';
-        } else {
-            sliderImages[sliderImageVisibilityCounter].style.display = 'none';
-            sliderImageVisibilityCounter = 0;
-            sliderImages[sliderImageVisibilityCounter].style.display = 'block';
+    const prevButton = document.querySelector('.prev'),
+        nextButton = document.querySelector('.next'),
+        sliderElements = document.querySelectorAll('.slider-element');
+
+    let sliderCounter = 0;
+
+    function showSlides(counter) {
+        for (let sliderElement of sliderElements) {
+            sliderElement.style.display = 'none';
         }
+        sliderElements[counter].style.display = 'flex';
     }
 
     function prevSlide() {
-        if (sliderImageVisibilityCounter > 0) {
-            sliderImages[sliderImageVisibilityCounter].style.display = 'none';
-            sliderImageVisibilityCounter -= 1;
-            sliderImages[sliderImageVisibilityCounter].style.display = 'block';
-        } else {
-            sliderImages[sliderImageVisibilityCounter].style.display = 'none';
-            sliderImageVisibilityCounter = sliderImages.length -1;
-            sliderImages[sliderImageVisibilityCounter].style.display = 'block';
+        sliderCounter -= 1;
+        if (sliderCounter < 0) {
+            sliderCounter = sliderElements.length - 1;
         }
+        showSlides(sliderCounter);
     }
 
-    nextButton.addEventListener('click', nextSlide);
+    function nextSlide() {
+        sliderCounter += 1;
+        if (sliderCounter > sliderElements.length - 1) {
+            sliderCounter = 0;
+        }
+        showSlides(sliderCounter);
+    }
+
     prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+    showSlides(sliderCounter);
 
     //Active plan picker
 
-    var chooserButtons = document.querySelectorAll('.plans-option button'),
+    const chooserButtons = document.querySelectorAll('.plans-option button'),
         plans = document.querySelectorAll('.plans-option');
 
     function makeActive(event) {
-        for (var plan of plans) {
+        for (let plan of plans) {
             plan.classList.remove('active');
             plan.classList.add('inactive');
         }
@@ -63,12 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
         event.target.parentElement.classList.add('active');
     }
 
-    for (var chooserButton of chooserButtons) {
+    for (let chooserButton of chooserButtons) {
         chooserButton.addEventListener('click', makeActive);
     }
 
     //Chair calculator app
-    var listPanelElements = document.querySelectorAll('.list_panel li'),
+    const listPanelElements = document.querySelectorAll('.list_panel li'),
         chairTypes = document.querySelectorAll('.drop_down_list:first-child .list_panel li'),
         listArrows = document.querySelectorAll('.list_arrow'),
         checkbox = document.querySelector('#transport');
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function enterPrices(event) {
-        var option = event.target.innerText;
+        const option = event.target.innerText;
 
         switch(option) {
             case 'Czerwony':
@@ -114,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function countFinalPrice() {
-        var sum = document.querySelector('.sum'),
+        const sum = document.querySelector('.sum'),
             colorPrice = Number(document.querySelector('.color_value').innerText),
             patternPrice = Number(document.querySelector('.pattern_value').innerText),
             transportPrice = Number(document.querySelector('.transport_value').innerText);
@@ -122,11 +124,11 @@ document.addEventListener('DOMContentLoaded', function () {
         sum.innerHTML = (colorPrice + patternPrice + transportPrice).toString();
     }
 
-    for (var listArrow of listArrows) {
+    for (let listArrow of listArrows) {
         listArrow.addEventListener('click', showDropDownListPanel)
     }
 
-    for (var listPanelElement of listPanelElements) {
+    for (let listPanelElement of listPanelElements) {
         listPanelElement.addEventListener('click', changeListLabel);
         listPanelElement.addEventListener('click', enterPrices);
     }
@@ -143,9 +145,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    for (var chairType of chairTypes) {
+    for (let chairType of chairTypes) {
         chairType.addEventListener('click', function (event) {
-            var listElementText = event.target.innerText;
+            let listElementText = event.target.innerText;
             document.querySelector('.panel_left h4').innerText = 'Chair ' + listElementText;
         } )
     }
