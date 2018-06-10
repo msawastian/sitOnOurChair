@@ -13,10 +13,10 @@
   }
   .form-proper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     input, textarea {
       width: 635px;
@@ -35,7 +35,12 @@
       resize: none;
       margin-bottom: 0;
     }
-    .form-proper-right-column {
+    .form-proper-left-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-proper-right-column,  {
       width: 400px;
       height: 400px;
       display: flex;

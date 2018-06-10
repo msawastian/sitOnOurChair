@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     for (var chairType of chairTypes) {
-        chairType.addEventListener('click', function () {
+        chairType.addEventListener('click', function (event) {
             var listElementText = event.target.innerText;
             document.querySelector('.panel_left h4').innerText = 'Chair ' + listElementText;
         } )
