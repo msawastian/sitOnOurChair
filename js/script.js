@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sliderImages = document.querySelectorAll('.slider-image'),
         sliderImageVisibilityCounter = 0;
 
-    function nextSlide(event) {
+    function nextSlide() {
         if (sliderImageVisibilityCounter < sliderImages.length - 1) {
             sliderImages[sliderImageVisibilityCounter].style.display = 'none';
             sliderImageVisibilityCounter += 1;
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function prevSlide(event) {
+    function prevSlide() {
         if (sliderImageVisibilityCounter > 0) {
             sliderImages[sliderImageVisibilityCounter].style.display = 'none';
             sliderImageVisibilityCounter -= 1;
@@ -78,9 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function changeListLabel(event) {
-        var listElementText = event.target.innerText;
-        // document.querySelector('.panel_left h4').innerText = 'Chair ' + listElementText;
-        event.target.parentElement.previousElementSibling.previousElementSibling.innerText = listElementText;
+        event.target.parentElement.previousElementSibling.previousElementSibling.innerText = event.target.innerText;
         event.target.parentElement.classList.toggle('visible');
     }
 
