@@ -1,4 +1,6 @@
-
+section.application, section.application * {
+  box-sizing: content-box;
+}
 .application {
   background-color: #f9f9f9;
   padding:30px 0;
@@ -30,9 +32,10 @@
 }
 
 
-.applicationForm {
+.application_form {
   margin-top:50px;
 }
+
 .drop_down_list {
   border:1px solid #8de0d2;
   width: 280px;
@@ -90,7 +93,7 @@
   display: none;
 }
 
-.applicationCheckbox input:applicationChecked + label::after {
+.applicationCheckbox input:checked + label::after {
   display: block;
 }
 
@@ -129,7 +132,6 @@
   height:195px;
   padding:10px;
   margin-top: 50px;
-
 }
 
 .application .green_button {
@@ -169,20 +171,20 @@
 
 .panel_left h4 , .panel_right h4{
   color: #24baa0;
-  font-size: 23px;
+  font-size: 18px;
   margin: 0;
 }
 
 .panel_left span{
   margin-top:10px;
-  font-size: 22px;
+  font-size: 20px;
   color: #5b5a5a;
   display: block;
 }
 
 .panel_right span {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   color: #24baa0;
   margin-top:10px;
 }
@@ -224,12 +226,20 @@
   padding-bottom: 10px;
   list-style: none;
   margin: 0;
-  left: 0px;
+  left: 0;
   z-index: 2;
   position: absolute;
   top: 54px;
   display:none;
+  &.visible {
+    display: block;
+  }
+  li:hover {
+    background-color: rgba(37, 201, 176, 0.7);
+  }
 }
+
+
 .list_panel li {
   margin-top:10px;
   cursor: pointer;

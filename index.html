@@ -9,7 +9,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="navigation_header">
         <div class="container">
             <div class="logo">
                 <h1>Sit <span class="site-color-span"><strong>on</strong></span> chair</h1>
@@ -137,37 +137,15 @@
             </div>
         </div>
     </section>
-    <section class="form">
-        <div class="container form-div">
-            <div class="form-header">
-                <h2>kontakt</h2>
-            </div>
-            <div class="form-proper">
-
-                <input type="text" placeholder="Imię">
-                <input type="email" placeholder="email">
-                <textarea placeholder="Wiadomość"></textarea>
-
-                <div class="form-proper-right-column">
-                    <div class="form-image"></div>
-                    <div class="form-checkbox-container">
-                        <div class="form-checkbox"></div>
-                        <div>Zgadzam się na przetwarzanie moich danych osobowych</div>
-                    </div>
-                    <button>wyślij</button>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="application">
-        <div class="container application-div">
+        <div class="container">
             <section class="choice_part inline">
-                <header class="application-header">
+                <header>
                     <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
                     <span class="green_bell"></span>
                 </header>
 
-                <div class="applicationForm">
+                <div class="application_form">
                     <div class="drop_down_list">
                         <span class="list_label">Wybierz rodzaj</span>
                         <span class="list_arrow"></span>
@@ -195,10 +173,10 @@
                         </ul>
                     </div>
                     <div class="applicationCheckbox check-box">
-                        <input type="applicationCheckbox" id="transport" data-transport-price="200">
+                        <input type="checkbox" id="transport" data-transport-price="200">
                         <label for="transport">Transport</label>
                     </div>
-                    <!--<div class="applicationCheckbox"></div>-->
+                    <!--<div class="checkbox"></div>-->
                     <!--<span class="list_label inline_text">Transport</span>-->
                 </div>
             </section>
@@ -208,7 +186,7 @@
             </section>
 
             <section class="summary_part inline">
-                <header class="align_right application-header">
+                <header class="align_right">
                     <h3>PODSUMOWANIE</h3>
                     <span class="green_bell"></span>
                 </header>
@@ -222,15 +200,40 @@
                     </div>
                     <div class="panel_right">
                         <h4 class="title value"></h4>
-                        <span class="color value"></span>
-                        <span class="pattern value"></span>
-                        <span class="transport value"></span>
+                        <span class="color_value"></span>
+                        <span class="pattern_value"></span>
+                        <span class="transport_value"></span>
                     </div>
                     <div class="sum_label">SUMA</div>
                     <div class="sum"><strong></strong></div>
                 </div>
                 <a href="" class="green_button">Zamawiam</a>
             </section>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container form-div">
+            <div class="form-header">
+                <h2>kontakt</h2>
+            </div>
+            <div class="form-proper">
+
+                <div class='form-proper-left-column'>
+                    <input type="text" placeholder="Imię">
+                    <input type="email" placeholder="email">
+                    <textarea placeholder="Wiadomość"></textarea>
+                </div>
+
+
+                <div class="form-proper-right-column">
+                    <div class="form-image"></div>
+                    <div class="form-checkbox-container">
+                        <div class="form-checkbox"></div>
+                        <div>Zgadzam się na przetwarzanie moich danych osobowych</div>
+                    </div>
+                    <button>wyślij</button>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
