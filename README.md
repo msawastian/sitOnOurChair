@@ -4,7 +4,7 @@
 Company landing page made during CodersLab bootcamp. 
 Recreated to be as faithful to the template as possible with my current skills.
 Template can be found in root folder of this project.
-Uses HTML5, CSS 3 (mainly Flexbox) and JS ES5.
+Uses HTML5, CSS 3 (mainly Flexbox) and JS ES5 with bits of ES6.
 
 Site contents:
 1) header with CSS-based dropdown menus,
