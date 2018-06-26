@@ -1,8 +1,10 @@
-# sitOnOurChair
+# SIT ON CHAIR
 
+<img width='250' height='250' src='images/sit_on_chair_logo.png'>
+
+# Project description
 
 Company landing page made during CodersLab bootcamp. 
-Recreated to be as faithful to the template as possible with my current skills.
 Template can be found in root folder of this project.
 Uses HTML5, CSS 3 (mainly Flexbox) and JS ES5 with bits of ES6.
 
